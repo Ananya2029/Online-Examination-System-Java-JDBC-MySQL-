@@ -173,7 +173,6 @@ public class Main
         System.out.println("\nExam Finished!");
         System.out.println("Score: " + score + "/" + questions.size());
 
-        // 🔹 Save result
         Result result = new Result(name, phone, age, score);
         resultDAO.saveResult(result);
     }
